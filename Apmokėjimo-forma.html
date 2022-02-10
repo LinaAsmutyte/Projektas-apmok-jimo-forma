@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apmokėjimo forma</title>
+</head>
+<body>
+    <h1>Apmokėjimo forma</h1>
+    <p>Privalomi laukai pažymėti..*</p>
+    <form action="./Pridavimas.html"></form>
+    <h2>Kontaktinė informacija </h2>
+        <fieldset>
+            <legend>Kreipinys</legend>
+            <div>
+                <label>
+                    Ponas
+                    <input type="radio" value="Ponas" name="title">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ponia
+                    <input type="radio" value="Ponia" name="title">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Nesakysiu
+                    <input type="radio" value="Nesakysiu" name="title">
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            Vardas..* 
+            <input required type="text" minlength="2" maxlength="50" placeholder="Jūsų vardas" name="name" >
+        </div>
+        <div>
+            Pavardė..*
+            <input required type="text" minlength="2" maxlength="50" placeholder="Jūsų pavardė" name="lastname">
+        </div>
+        <div>
+            El. paštas..*
+            <input required type="email"placeholder="Elektroninis paštas" name="email">
+        </div>
+        <div>
+            Slaptažodis..*
+            <input required type="password" minlength="5" placeholder="Jūsų slaptažodis" name="password">
+        </div>
+    <h2>Apmokėjimo informacija</h2>
+        <div>
+            Kortelės tipas
+            <select required name="cardtype">
+            <option value="visa" selected>visa</option>
+            <option value="Mastercard">mc</option>
+            <option value="American Express">amex</option>
+            </select>
+        </div>
+        <div>
+            Kortelės numeris..*
+            <input required type="text" placeholder="Kortelės numeris" minlength="16" maxlength="16" name="cardnumber">
+        </div>
+        <div>
+            Galiojimo data..*
+            <input required type="date" name="date">
+        </div>
+
+</body>
+</html>
